@@ -95,6 +95,56 @@ section#four { background-color:  #2eb2ff; }
   margin-top: -90px;
   margin-left: 705px;
 }
+
+/*@keyframes scroll-arrow {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes scroll-arrow {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes scroll-arrow {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes scroll-arrow {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}*/
+
+@keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+#scroll-arrow {
+  -webkit-animation: scroll-arrow 4s infinite;
+  -moz-animation: scroll-arrow 4s infinite;
+  -o-animation: scroll-arrow 4s infinite;
+  animation: scroll-arrow 4s infinite;
+  margin-top: 11%;
+}
+
 /*****************************
       ABOUT ME SECTION
 ******************************/
@@ -122,12 +172,12 @@ section#four { background-color:  #2eb2ff; }
 }*/
 .about-me-content {
   /*line-height: 1.4;*/
-  padding: 7% 5% 0% 5%;
+  padding: 6% 5% 0% 5%;
   text-align: left;
 }
 .languages {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 4%;
 }
 /*li {
   list-style: none;
