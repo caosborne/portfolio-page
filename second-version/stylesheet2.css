@@ -1,0 +1,75 @@
+  html body {
+    /* Set background image so that transparency is easy to see */
+    background-image: url("http://www.chcp.edu/sites/default/files/content/images/CHCP-Austin-Campus_0.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+
+  #container {
+    /* Set specific size for container */
+    position: fixed;
+    /*width:300px;*/
+    width: 100%;
+    height: 100%;
+  }
+
+  #transparency {
+    /* Match size of container, and make the layer transparent */
+    position: fixed;
+    width:300px;
+    height:500px;
+    background-color: grey; /* Any base color will do */
+    filter:alpha(opacity=70);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -khtml-opacity:0.7;
+  }
+
+  #content {
+    /* Make content sit within the confines of the container */
+    position:relative;
+  }
+
+img{
+  border:none;
+}
+.clearfix{
+  clear:both;
+}
+
+/* content */
+#home{
+  height:100%;
+  width:100%;
+  /*background: url("http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png");*/
+    color:white;
+    background-attachment:fixed;
+    background-size:cover;
+}
+#spritzer{
+  background: transparent;
+    background-attachment:fixed;
+    background-size:cover;
+}
+#uberuns{
+  height:100%;
+  width:100%;
+    background:rgba(255,255,255,.9);
+        position:relative;
+}
+#uberuns:after {
+    content:'';
+    height:100%;
+  width:100%;
+  background: url("http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png");
+    position:absolute;
+    background-attachment:fixed;
+    background-size:cover;
+    left:0;
+    top:0;
+    z-index:-1;
+}
