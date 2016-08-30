@@ -115,13 +115,12 @@
 
 <nav class="navbar navbar-fixed-top">
   <ul id=menu>
-    <li><a class="fontawesomeicon2" href="#"><i class="fa fa-medium fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="My Blog"></i></a>
-    <li><a class="fontawesomeicon2" href="#"><i class="fa fa-github-alt fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="GitHub Repo"></i></a>
-    <li><a class="fontawesomeicon2" href="#"><i class="fa fa-linkedin fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="LinkedIn"></i></a>
+    <li><a class="fontawesomeicon2" href="https://medium.com/@chaosborne" target="_blank"><i class="fa fa-medium fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="My Blog"></i></a>
+    <li><a class="fontawesomeicon2" href="https://github.com/caosborne" target="_blank"><i class="fa fa-github-alt fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="GitHub Repo"></i></a>
+    <li><a class="fontawesomeicon2" href="https://www.linkedin.com/in/chaosborne" target="_blank"><i class="fa fa-linkedin fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="LinkedIn"></i></a>
     <li><a class="fontawesomeicon2" href="mailto:chris.a.osborne@gmail.com"><i class="fa fa-envelope-o fa-2x fa2" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="My Email"></i></a>
   </ul>
 </nav>
-
 
   <!--------------------------------------------->
   <!---             Home Content              --->
@@ -253,6 +252,7 @@
           <!-- <div class="col-xs-3 col-sm-3 col-md-3 angel">
             <a class="fontawesomeicon" href="https://angel.co/chrisaosborne" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Angel List"><i class="fa fa-angellist fa-3x" aria-hidden="true"></i></a>
           </div> -->
+
           <div class="col-xs-3 col-sm-3 col-md-3 medium">
             <a class="fontawesomeicon" href="https://medium.com/@chaosborne" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Medium"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a>
           </div>
@@ -263,7 +263,7 @@
             <a class="fontawesomeicon" href="https://www.linkedin.com/in/chaosborne" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
           </div>
           <div class="col-xs-3 col-sm-3 col-md-3 email">
-            <a class="fontawesomeicon" href="mailto:chris.a.osborne@gmail.com" target="_blank" data-toggle="tooltip" data-placement="bottom" title="My Email"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+            <a class="fontawesomeicon" href="mailto:chris.a.osborne@gmail.com" data-toggle="tooltip" data-placement="bottom" title="My Email"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
           </div>
           <!-- <div class="col-xs-3 col-sm-3 col-md-2 medium">
             <a class="fontawesomeicon" href="https://medium.com/@chaosborne" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Medium"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a>
@@ -302,7 +302,7 @@
                   <div class="col-lg-8 col-lg-offset-2">
                       <div class="modal-body">
                           <embed src="Chris-Osborne-Resume-Web-V4.pdf" width="800px" height="1090px">
-                          <button id="btn-resume" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button id="btn-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>
@@ -324,22 +324,26 @@
                           <h3>Task Lister</h3>
                           <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i> <a class="fontawesomeiconmodal" href="https://github.com/sgwaite8/react_project" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub Repo"><i class="fa fa-github-alt fa-3x gh-modal" aria-hidden="true"></i></a>  <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i>
                           <a href="http://task-lister.herokuapp.com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Website"><img src="img/task-lister.jpg" id="modal-img" class="img-responsive img-centered" alt=""></a>
-                          <h4>Task Lister was a group project using React.JS along with Google Maps & Places API, Firebase DB and several other technologies incorporated with it. The idea behind it was to add tasks to your task list that has a location attached to your task. When you submit the task to your list it automatically adds a location on the map and creates a route for you so you can map your entire to do list, errands, or tourist spots you want to go checkout out. We had 4 and a half days to come up with an idea, plan, wireframe, code, and do a demonstration of our app. Not everything we wanted to incorporate into the app was able to make it in the MVP but we plan to continue coding the app to get to our initial thought for an MVP.</h4>
+                          <h4 id="modal-desc">Task Lister was a group project using React.JS along with Google Maps & Places API, Firebase DB and several other technologies incorporated with it. The idea behind it was to add tasks to your task list that has a location attached to your task. When you submit the task to your list it automatically adds a location on the map and creates a route for you so you can map your entire to do list, errands, or tourist spots you want to go checkout out. We had 4 and a half days to come up with an idea, plan, wireframe, code, and do a demonstration of our app. Not everything we wanted to incorporate into the app was able to make it in the MVP but we plan to continue coding the app to get to our initial thought for an MVP.</h4>
+                          <div class="row">
+                            <a href="http://task-lister.herokuapp.com/" target="_blank"><button id="btn-modal" type="button" class="btn btn-default">DEMO</button></a>
+                            <a href="https://github.com/sgwaite8/react_project" target="_blank"><button id="btn-modal" type="button" class="btn btn-default" >REPO</button></a>
+                          </div>
                           <ul class="list-inline item-details">
                               <h6><li><strong><span id="modal-content">Technologies:</span></strong>
                                   ReactJS, FirebaseDB, Google Maps & Places API, Bootstrap, UnderscoreJS
                               </li></h6>
                               <h6><li><strong><span id="modal-content">Developers:</span></strong>
-                                <a href="https://www.linkedin.com/in/chaosborne" id="group-members">Chris Osborne</a>,<a href="https://www.linkedin.com/in/susannahwaite" id="group-members"> Susannah Waite</a>,<a href="https://www.linkedin.com/in/christianmansour" id="group-members"> Christian Mansour</a>
+                                <a href="https://www.linkedin.com/in/chaosborne" id="group-members" target="_blank">Chris Osborne</a>,<a href="https://www.linkedin.com/in/susannahwaite" id="group-members" target="_blank"> Susannah Waite</a>,<a href="https://www.linkedin.com/in/christianmansour" id="group-members" target="_blank"> Christian Mansour</a>
                               </li></h6>
-                              <h6><li><strong><span id="modal-content">Website:</span></strong>
+                              <!-- <h6><li><strong><span id="modal-content">Website:</span></strong>
                                   <a href="http://task-lister.herokuapp.com/" target="_blank" id="group-members" data-toggle="tooltip" data-placement="bottom" title="Website">http://task-lister.herokuapp.com</a>
-                              </li></h6>
+                              </li></h6> -->
                               <h6><li><strong><span id="modal-content">Date:</span></strong>
                                   July 2016
                               </li></h6>
                           </ul>
-                          <button id="btn-resume" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button id="btn-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>
@@ -359,24 +363,28 @@
                           <h3>CodeConnect.Us</h3>
                           <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i> <a class="fontawesomeiconmodal" href="https://github.com/lilixiaoxx/project2" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub Repo"><i class="fa fa-github-alt fa-3x gh-modal" aria-hidden="true"></i></a>  <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i>
                           <a href="http://codeconnect-us.herokuapp.com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Website"><img src="img/codeconnect-us.jpg" id="modal-img" class="img-responsive img-centered" alt=""></a>
-                          <h4>This was our first group project which we used a MEN (MongoDB, ExpressJS, NodeJS) stack. CodeConnect.Us is a coding tutor locator which you can then create a tutoring session. The initial thought was to create a Austin specific application that would allow anyone interested in learning to code to find a tutor and sort them by what languages they know and then set up a tutoring session at a specific location. We also thought this could be a great tool to provide for underprivileged kids since this would be a free tutoring session application to help the tutors continue to master their own skills.</h4>
+                          <h4 id="modal-desc">This was our first group project which we used a MEN (MongoDB, ExpressJS, NodeJS) stack. CodeConnect.Us is a coding tutor locator which you can then create a tutoring session. The initial thought was to create a Austin specific application that would allow anyone interested in learning to code to find a tutor and sort them by what languages they know and then set up a tutoring session at a specific location. We also thought this could be a great tool to provide for underprivileged kids since this would be a free tutoring session application to help the tutors continue to master their own skills.</h4>
+                          <div class="row">
+                            <a href="http://codeconnect-us.herokuapp.com/" target="_blank"><button id="btn-modal" type="button" class="btn btn-default" >DEMO</button></a>
+                            <a href="https://github.com/lilixiaoxx/project2" target="_blank"><button id="btn-modal" type="button" class="btn btn-default" >REPO</button></a>
+                          </div>
                           <ul class="list-inline item-details">
                               <h6><li><strong><span id="modal-content">Technologies:</span></strong>
                                   MongoDB, ExpressJS, NodeJS, Auth, Bootstrap
                               </li></h6>
                               <h6><li><strong><span id="modal-content">Developers:</span></strong>
-                                <a href="https://www.linkedin.com/in/chaosborne" id="group-members">Chris Osborne,</a>
-                                  <a href="https://www.linkedin.com/in/alfredo-n-amengual-02803133" id="group-members"> Alfredo Amengual,</a>
-                                  <a href="https://www.linkedin.com/in/xichen621" id="group-members"> CeCe Chen</a>
+                                <a href="https://www.linkedin.com/in/chaosborne" id="group-members" target="_blank">Chris Osborne,</a>
+                                  <a href="https://www.linkedin.com/in/alfredo-n-amengual-02803133" id="group-members" target="_blank"> Alfredo Amengual,</a>
+                                  <a href="https://www.linkedin.com/in/xichen621" id="group-members" target="_blank"> CeCe Chen</a>
                               </li></h6>
-                              <h6><li><strong><span id="modal-content">Website:</span></strong>
+                              <!-- <h6><li><strong><span id="modal-content">Website:</span></strong>
                                   <a href="http://codeconnect-us.herokuapp.com/" target="_blank" id="group-members" data-toggle="tooltip" data-placement="bottom" title="Website">http://codeconnect-us.herokuapp.com</a>
-                              </li></h6>
+                              </li></h6> -->
                               <h6><li><strong><span id="modal-content">Date:</span></strong>
                                   July 2016
                               </li></h6>
                           </ul>
-                          <button id="btn-resume" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button id="btn-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>
@@ -396,22 +404,26 @@
                           <h3>Tic Tac To3-D</h3>
                           <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i> <a class="fontawesomeiconmodal" href="https://github.com/caosborne/tictactoe" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub Repo"><i class="fa fa-github-alt fa-3x gh-modal" aria-hidden="true"></i></a>  <i class="fa fa-ellipsis-h fa-3x" aria-hidden="true"></i>
                           <a href="http://tictacto3-d.bitballoon.com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Website"><img src="img/ttt3d.jpg" id="modal-img" class="img-responsive img-centered" alt=""></a>
-                          <h4>My first site built after two weeks in the General Assembly Web Dev Immersive course. My overall concept was to make a 3D style Tic Tac Toe that when you click on a square to put your X/O the cube would then randomly rotate to another side for the next player to play their turn. So you'd essentially be playing 6 games at once making the game a lot more difficult to predict like traditional Tic Tac Toe is. My concept was larger than my ability at the time of me creating this so I plan on updating this site as I continue to learn more.</h4>
+                          <h4 id="modal-desc">My first site built after two weeks in the General Assembly Web Dev Immersive course. My overall concept was to make a 3D style Tic Tac Toe that when you click on a square to put your X/O the cube would then randomly rotate to another side for the next player to play their turn. So you'd essentially be playing 6 games at once making the game a lot more difficult to predict like traditional Tic Tac Toe is. My concept was larger than my ability at the time of me creating this so I plan on updating this site as I continue to learn more.</h4>
+                          <div class="row">
+                            <a href="http://tictacto3-d.bitballoon.com/" target="_blank"><button id="btn-modal" type="button" class="btn btn-default" >DEMO</button></a>
+                            <a href="https://github.com/caosborne/tictactoe" target="_blank"><button id="btn-modal" type="button" class="btn btn-default" >REPO</button></a>
+                          </div>
                           <ul class="list-inline item-details">
                                 <h6><li><strong><span id="modal-content">Technologies:</span></strong>
                                     HTML5, CSS3, JavaScript
                                 </li></h6>
                                 <h6><li><strong><span id="modal-content">Developers:</span></strong>
-                                  <a href="https://www.linkedin.com/in/chaosborne" id="group-members">Chris Osborne</a>
+                                  <a href="https://www.linkedin.com/in/chaosborne" id="group-members" target="_blank">Chris Osborne</a>
                                </li></h6>
-                               <h6><li><strong><span id="modal-content">Website:</span></strong>
+                               <!-- <h6><li><strong><span id="modal-content">Website:</span></strong>
                                    <a href="http://tictacto3-d.bitballoon.com/" target="_blank" id="group-members" data-toggle="tooltip" data-placement="bottom" title="Website">tictacto3-d.bitballoon.com</a>
-                               </li></h6>
+                               </li></h6> -->
                               <h6><li><strong><span id="modal-content">Date:</span></strong>
                                   June 2016
                               </li></h6>
                           </ul>
-                          <button id="btn-resume" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button id="btn-modal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>

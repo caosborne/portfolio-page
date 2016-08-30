@@ -30,10 +30,15 @@ h2 {
 h3 {
   text-align: center;
   opacity: (black, 0.5);
+  font-size: 5em;
+  font-weight: 700;
 }
 h4 {
   line-height: 1.4;
   font-size: 1.34em;
+}
+h6 {
+  font-size: 1.14em;
 }
 h1, h3, h6, p {
   color: #2eb2ff;
@@ -204,7 +209,7 @@ section#four { background-color:  #2eb2ff; }
 #portfolio-img {
   border: 3px solid #2eb2ff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px 0 #000;
+  /*box-shadow: 0 4px 15px 0 #000;*/
 }
 
 #modal-content {
@@ -226,13 +231,39 @@ section#four { background-color:  #2eb2ff; }
   border-radius: 10px;
 }
 
+#modal-desc {
+  padding-top: 2%;
+}
+
 .fontawesomeiconmodal {
   color: #000;
   text-decoration: none;
   padding: 10px;
+  padding-bottom: 2%;
 }
 
 a:hover .gh-modal {
+  color: #2eb2ff;
+}
+
+#btn-modal {
+  border: 2px solid #2eb2ff;
+  background-color: #000;
+  color: #2eb2ff;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-right: 2%;
+  /*margin-bottom: 10%;*/
+}
+
+#btn-modal:hover {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #2eb2ff;
+  font-weight: bold;
+}
+
+.fa-times {
   color: #2eb2ff;
 }
 /*****************************
@@ -293,6 +324,10 @@ footer {
   background-color: #000;
   /*padding: 50px;*/
   padding-top: 5%;
+}
+
+#copyright {
+  font-size: 1.29em;
 }
 
 /*****************************
