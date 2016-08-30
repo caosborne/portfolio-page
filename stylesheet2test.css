@@ -212,6 +212,10 @@ section#four { background-color:  #2eb2ff; }
   /*box-shadow: 0 4px 15px 0 #000;*/
 }
 
+#modal-row2 {
+  padding-top: 3%;
+}
+
 #modal-content {
   text-align: center;
 }
