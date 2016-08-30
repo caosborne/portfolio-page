@@ -49,10 +49,6 @@ h2, h4, .fontawesomeicon {
 span, a:hover .fa {
   color: #fff;
 }
-/*strong {
-    color: #fff;
-}*/
-
 /* Make each section 100% of the browser viewport height */
 section {
   height: 100%;
@@ -60,7 +56,7 @@ section {
   position: relative;
   text-align: center;
 }
-    /* Center the content of the sections */
+/* Center the content of the sections */
 section .inner {
   margin: 0 auto;
   max-width: 85%;
@@ -69,59 +65,31 @@ section .inner-contact {
   margin: 0 auto;
   max-width: 100%;
 }
-
 /* Background colors for each section */
 section#one { background-color: #fff; }
 section#two { background-color: #2eb2ff; }
 section#three { background-color: #fff; }
 section#four { background-color:  #2eb2ff; }
-
 /*****************************
         HOME SECTION
 ******************************/
 .header {
   padding: 5% 0 0 0;
 }
-
 .top {
   /*margin-top: 160px;*/
   margin: 37% 0 0 0;
-  /*text-align: left;*/
 }
-
 #top, #bottom {
   text-align: left;
   margin-left: 20%;
 }
-
 #www-logo {
   height: 50px;
   width: 50px;
   margin-top: -90px;
   margin-left: 705px;
 }
-
-/*@keyframes scroll-arrow {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes scroll-arrow {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes scroll-arrow {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes scroll-arrow {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}*/
-
 @keyframes scroll-arrow {
   0%   { opacity:0; }
   50%  { opacity:1; }
@@ -149,7 +117,6 @@ section#four { background-color:  #2eb2ff; }
   animation: scroll-arrow 4s infinite;
   margin-top: 11%;
 }
-
 /*****************************
       ABOUT ME SECTION
 ******************************/
@@ -169,12 +136,8 @@ section#four { background-color:  #2eb2ff; }
   background-color: rgba(0, 0, 0, 0.5);
   /*border-radius: 5px;*/
   border-radius: 4%;
-  /*width: 400px;*/
   width: 75%;
 }
-/*#about-me {
-  background-color: rgb(255, 255, 255);
-}*/
 .about-me-content {
   /*line-height: 1.4;*/
   padding: 6% 5% 0% 5%;
@@ -184,10 +147,6 @@ section#four { background-color:  #2eb2ff; }
   text-align: center;
   padding-top: 4%;
 }
-/*li {
-  list-style: none;
-  color: #fff;
-}*/
 #skill-header {
   font-weight: bold;
 }
@@ -205,51 +164,41 @@ section#four { background-color:  #2eb2ff; }
   padding-top: 5%;
   padding-bottom: 70px;
 }
-
 #portfolio-img {
   border: 3px solid #2eb2ff;
-  border-radius: 10px;
+  border-radius: 5px;
   /*box-shadow: 0 4px 15px 0 #000;*/
 }
-
 #modal-row2 {
   padding-top: 3%;
 }
-
 #modal-content {
   text-align: center;
 }
-
 #modal-content {
   color: #000;
   font-size: 1.14em;
   font-weight: bold;
 }
-
 #group-members {
   color: #2eb2ff;
 }
-
 #modal-img {
   border: 3px solid #2eb2ff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-
 #modal-desc {
   padding-top: 2%;
 }
-
 .fontawesomeiconmodal {
   color: #000;
   text-decoration: none;
   padding: 10px;
   padding-bottom: 2%;
 }
-
 a:hover .gh-modal {
   color: #2eb2ff;
 }
-
 #btn-modal {
   border: 2px solid #2eb2ff;
   background-color: #000;
@@ -259,14 +208,12 @@ a:hover .gh-modal {
   margin-right: 2%;
   /*margin-bottom: 10%;*/
 }
-
 #btn-modal:hover {
   border: 2px solid #000;
   background-color: #fff;
   color: #2eb2ff;
   font-weight: bold;
 }
-
 .fa-times {
   color: #2eb2ff;
 }
@@ -302,7 +249,6 @@ i.fa-level-down {
 #resume-btn {
   margin: 20px auto;
 }
-
 #btn-resume {
   border: 2px solid #fff;
   background-color: #000;
@@ -310,14 +256,12 @@ i.fa-level-down {
   font-weight: bold;
   margin-bottom: 10%;
 }
-
 #btn-resume:hover {
   border: 2px solid #000;
   background-color: #fff;
   color: #2eb2ff;
   font-weight: bold;
 }
-
 #resume-content {
   background-color: #2eb2ff;
 }
@@ -329,11 +273,9 @@ footer {
   /*padding: 50px;*/
   padding-top: 5%;
 }
-
 #copyright {
   font-size: 1.29em;
 }
-
 /*****************************
         Nav Bar Styles
 ******************************/
@@ -345,11 +287,9 @@ nav {
   text-decoration: none;
   color: #000;
 }
-
 a:hover .fa2 {
   color: grey;
 }
-
 #menu {
   position: fixed;
   right: 0;
@@ -361,204 +301,91 @@ a:hover .fa2 {
   padding: 2%;
   list-style: none;
 }
+/*****************************
+       Tablet devices
+******************************/
 
-/*.navbar-fixed-left {
-  width: 140px;
-  position: fixed;
-  border-radius: 0;
-  height: 100%;
-}
-
-.navbar-fixed-left .navbar-nav > li {*/
-  /*float: none;  /* Cancel default li float: left */
-  /*width: 20px;
-}*/
-
-
-
-/*nav {
-font-family: 'Lato', sans-serif;
-}
-
-.navbar-default {
-background-color: #2eb2ff;
-border-color: #269ee4;
-}
-.navbar-default .navbar-brand {
-color: #ffffff;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-color: #000000;
-}
-.navbar-default .navbar-text {
-color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-color: #000000;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu {
-background-color: #2eb2ff;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-color: #ffffff;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-color: #000000;
-background-color: #269ee4;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-background-color: #269ee4;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-color: #000000;
-background-color: #269ee4;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-color: #000000;
-/*background-color: #269ee4;
-background-color: #2eb2ff;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-color: #000000;
-background-color: #269ee4;
-}
-.navbar-default .navbar-toggle {
-border-color: #269ee4;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-background-color: #269ee4;
-}
-.navbar-default .navbar-toggle .icon-bar {
-background-color: #ffffff;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-border-color: #ffffff;
-}
-.navbar-default .navbar-link {
-color: #ffffff;
-}
-.navbar-default .navbar-link:hover {
-color: #000000;
-}
-/*@media (min-width: 768px)
-{
-  .navbar-header {
-    float: none;
+@media only screen and (max-width : 991px) {
+  h1 {
+    font-size: 10.83em;
+    font-weight: 900;
+    text-align: left;
+    /*padding-top: 275px;*/
   }
-  .navbar-toggle {
-    display: block;
+  #chris {
+    /*text-align: left;*/
+    padding-top: 275px;
   }
-  .navbar-collapse.collapse {
-    display: none !important;
+  /*#home {
+    padding-top: 275px;
+    padding-bottom: 365px;
+  }*/
+  .top, .bottom {
+    font-size: 2.5em;
+    font-weight: 700;
   }
-}*/
-/*.navbar-header {
-      float: none;
-   }
-   .navbar-toggle {
-      display: block;
-   }
-   .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-   }
-   .navbar-collapse.collapse {
-      display: none!important;
-   }
-   .navbar-nav {
-      float: none!important;
-      margin: 7.5px -15px;
-   }
-   .navbar-nav>li {
-      float: none;
-   }
-   .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-   }
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #ffffff;
+  .top {
+    margin-top: 340px;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: #000000;
+  .bottom {
+    margin-left: 12%;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #000000;
-  background-color: #269ee4;
+  #www-logo {
+    height: 35px;
+    width: 35px;
+    margin-top: -60px;
+    margin-left: 420px;
   }
-}
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}*/
-
-/* Dropdown Button */
-/*.dropbtn {
-    background-color: transparent;
-    color: #000;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 5px;
+  #scroll-arrow {
+    margin-top: 60%;
+  }
+  .about {
+    /*padding: 10px 150px 10px 150px;*/
+  }
+  .languages {
+    padding-top: 15%;
+  }
+  .about-me-content {
+    padding-top: 10%;
+  }
+  #jump {
+    /*padding-top: 150px;*/
+    padding-top: 50%;
+  }
+  .pic-header h2 {
+    margin-top: -5%;
+    margin-left: 0%;
+    font-size: 2.8em;
+    border-radius: 4%;
+    width: 100%;
+  }
+  /*.portfolio {
+    padding: 0px 150px 0px 150px;
+  }*/
+  #port-title {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .portfolio-item-modal {
+    padding-bottom: 50px;
+  }
+  #contact-title {
+    padding-top: 10%;
+  }
+  /*.contact {
+    padding: 50px 0px;
+  }*/
+  #copyright {
+    font-size: 2em;
+  }
+  .contact {
+    padding: 20% 5% 3% 5%;
+  }
+  footer {
+    /*position: absolute;
+    width: 100%;*/
+    /*padding: 50px;*/
     margin-top: 25%;
-    margin-right: 15px;
-}*/
-
-/* Dropdown button on hover & focus */
-/*.dropbtn:hover, .dropbtn:focus {
-    background-color: #2eb2ff;
-    color: #fff;
-}*/
-
-/* The container <div> - needed to position the dropdown content */
-/*.dropdown {
-    float: right;
-    position: relative;
-    display: inline-block;
-}*/
-
-/* Dropdown Content (Hidden by Default) */
-/*.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    color: #fff;
-    min-width: 160px;
-    right: 0;
-}*/
-
-/* Links inside the dropdown */
-/*.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    right: 0;
-}*/
-
-/* Change color of dropdown links on hover */
-/*.dropdown-content a:hover {background-color: #2eb2ff; color: #000;}*/
-
- /*Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-/*.show {display:block;}*/
+    padding-top: 25%;
+  }
+}
