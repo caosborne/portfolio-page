@@ -193,9 +193,34 @@ a:hover .gh-modal {
   font-size: 1.14em;
 }
 
+.languages {
+  text-align: center;
+  padding-top: 4%;
+}
+
 #skill-header {
   line-height: 1;
   padding-top: 10px;
+}
+
+#modal-row2 {
+  padding-top: 3%;
+}
+
+#btn-modal {
+  border: 2px solid #2eb2ff;
+  background-color: #000;
+  color: #2eb2ff;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-right: 2%;
+  /*margin-bottom: 10%;*/
+}
+#btn-modal:hover {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #2eb2ff;
+  font-weight: bold;
 }
 
     /*****************************
