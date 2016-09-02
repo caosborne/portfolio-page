@@ -416,7 +416,7 @@ a:hover .fa2 {
     margin-top: 80%;
   }
   .languages {
-    padding-top: 15%;
+    padding-top: 0%;
   }
   .about-me-content {
     padding-top: 10%;
@@ -427,9 +427,14 @@ a:hover .fa2 {
   .pic-header h2 {
     margin-top: -5%;
     margin-left: 0%;
-    font-size: 2.8em;
+    font-size: 2.7em;
     border-radius: 4%;
     width: 100%;
+  }
+  h4 {
+    font-size: .97em;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
   #port-title {
     padding-top: 10%;
@@ -442,7 +447,7 @@ a:hover .fa2 {
     padding-top: 10%;
   }
   #copyright {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   .contact {
     padding: 20% 5% 3% 5%;
@@ -451,7 +456,7 @@ a:hover .fa2 {
     margin-top: 15%;
   }
   footer {
-    /*margin-top: 15%;*/
-    padding-top: 18%;
+    margin-top: 20%;
+    padding-top: 30%;
   }
 }
