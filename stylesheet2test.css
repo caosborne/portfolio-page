@@ -391,17 +391,17 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 275px;
+    padding-top: 255px;
   }
   .top, .bottom {
     font-size: 1.3em;
     font-weight: 700;
   }
   .top {
-    margin-top: 310px;
+    margin-top: 285px;
   }
   .bottom {
-    margin-left: 12%;
+    margin-left: 15%;
   }
   #www-logo {
     height: 20px;
@@ -413,7 +413,7 @@ a:hover .fa2 {
     width: 4.3em;
   }
   #scroll-arrow {
-    margin-top: 80%;
+    margin-top: 85%;
   }
   .languages {
     padding-top: 0%;
