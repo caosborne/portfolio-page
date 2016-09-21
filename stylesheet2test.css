@@ -67,7 +67,13 @@ section .inner-contact {
 }
 /* Background colors for each section */
 section#one { background-color: #fff; }
-section#two { background-color: #2eb2ff; }
+section#two {
+  /*background-color: #2eb2ff;*/
+  background-image: url("img/66%-5G.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: top;*/
+ }
 section#three { background-color: #fff; }
 section#four { background-color:  #2eb2ff; }
 /*****************************
@@ -160,6 +166,11 @@ section#four { background-color:  #2eb2ff; }
 /*****************************
       PORTFOLIO SECTION
 ******************************/
+#two {
+  background-image: url("66%code.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #port-title {
   padding-top: 5%;
   padding-bottom: 70px;
