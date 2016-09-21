@@ -8,7 +8,7 @@ html, body {
 h1 {
   /*padding: 20% 0 0 0;*/
   margin: 0;
-  /*text-align: center;*/
+  text-align: left;
   font-size: 17.85em;
   opacity: (white, 0.5);
   /*color: #2eb2ff;*/
@@ -124,53 +124,8 @@ section#four { background-color:  #2eb2ff; }
   margin-top: 11%;
 }
 /*****************************
-      ABOUT ME SECTION
-******************************/
-.about {
-  text-align: center;
-}
-.pic-header, .about-me-content {
-  padding: 3% 0 0 0;
-}
-.pic-header h2 {
-  color: #fff;
-  margin-top: -16%;
-  margin-left: 13%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  position: inherit;
-  /*background-color: rgba(255, 255, 255, 0.4);*/
-  background-color: rgba(0, 0, 0, 0.5);
-  /*border-radius: 5px;*/
-  border-radius: 4%;
-  width: 75%;
-}
-.about-me-content {
-  /*line-height: 1.4;*/
-  padding: 6% 5% 0% 5%;
-  text-align: left;
-}
-.languages {
-  text-align: center;
-  padding-top: 4%;
-}
-#skill-header {
-  font-weight: bold;
-}
-#jump {
-  /*border-radius: 30px;*/
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  /*border: 3px solid #fff;*/
-}
-/*****************************
       PORTFOLIO SECTION
 ******************************/
-#two {
-  background-image: url("66%code.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 #port-title {
   padding-top: 5%;
   padding-bottom: 70px;
@@ -227,6 +182,46 @@ a:hover .gh-modal {
 }
 .fa-times {
   color: #2eb2ff;
+}
+/*****************************
+      ABOUT ME SECTION
+******************************/
+.about {
+  text-align: center;
+}
+.pic-header, .about-me-content {
+  padding: 3% 0 0 0;
+}
+.pic-header h2 {
+  color: #fff;
+  margin-top: -16%;
+  margin-left: 13%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  position: inherit;
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  /*border-radius: 5px;*/
+  border-radius: 4%;
+  width: 75%;
+}
+.about-me-content {
+  /*line-height: 1.4;*/
+  padding: 6% 5% 0% 5%;
+  text-align: left;
+}
+.languages {
+  text-align: center;
+  padding-top: 4%;
+}
+#skill-header {
+  font-weight: bold;
+}
+#jump {
+  /*border-radius: 30px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  /*border: 3px solid #fff;*/
 }
 /*****************************
       CONTACT SECTION
@@ -311,6 +306,264 @@ a:hover .fa2 {
   margin-top: -2.5em;
   padding: 2%;
   list-style: none;
+}
+/*****************************
+        Large Screens
+******************************/
+
+@media only screen and (min-width : 1501px) {
+  h1 {
+    font-size: 19.68em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 19%;
+  }
+  .top {
+    margin: 50% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -7.4%;
+    margin-left: 58%;
+  }
+  #scroll-arrow {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width : 1500px) {
+  h1 {
+    font-size: 19.68em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 19%;
+  }
+  .top {
+    margin: 50% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -7.4%;
+    margin-left: 63%;
+  }
+  #scroll-arrow {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width : 1375px) {
+  h1 {
+    font-size: 18.68em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 22%;
+  }
+  .top {
+    margin: 55% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -8%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width : 1300px) {
+  h1 {
+    font-size: 16.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 35%;
+  }
+  .top {
+    margin: 65% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -8.1%;
+    margin-left: 61.5%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+}
+/*****************************
+       Laptop devices
+******************************/
+
+@media only screen and (max-width : 1227px) {
+  h1 {
+    font-size: 16.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 45%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width : 1177px) {
+  h1 {
+    font-size: 16.14em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 45%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width : 1127px) {
+  h1 {
+    font-size: 15.35em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width : 1077px) {
+  h1 {
+    font-size: 14.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (max-width : 1041px) {
+  h1 {
+    font-size: 13.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 75% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.5%;
+    margin-left: 62.5%;
+  }
+  #scroll-arrow {
+    margin-top: 30%;
+  }
 }
 /*****************************
        Tablet devices
@@ -557,5 +810,35 @@ a:hover .fa2 {
 }
 
 @media only screen and (max-width : 321px) {
-
+  h1 {
+    font-size: 4.25em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 500%;
+  }
+  .top, .bottom {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .top {
+    /*margin-top: 283px;*/
+    margin-top: 238%;
+  }
+  .bottom {
+    margin-left: 14%;
+  }
+  #www-logo {
+    height: 13px;
+    width: 13px;
+    margin-top: -9%;
+    margin-left: 67%;
+  }
+  #menu {
+    width: 4.3em;
+  }
+  #scroll-arrow {
+    margin-top: 80%;
+  }
 }
