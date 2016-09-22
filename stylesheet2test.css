@@ -37,10 +37,13 @@ h4 {
   line-height: 1.4;
   font-size: 1.34em;
 }
+h5 {
+
+}
 h6 {
   font-size: 1.14em;
 }
-h1, h3, h6, p {
+h1, h3, h6, p, h5 {
   color: #2eb2ff;
 }
 h2, h4, .fontawesomeicon {
@@ -72,7 +75,7 @@ section#two {
   background-image: url("img/66%-5G.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-position: top;*/
+  background-position: center;
  }
 section#three { background-color: #fff; }
 section#four { background-color:  #2eb2ff; }
@@ -130,10 +133,19 @@ section#four { background-color:  #2eb2ff; }
   padding-top: 5%;
   padding-bottom: 70px;
 }
-#portfolio-img {
+.portfolio-img {
   border: 3px solid #2eb2ff;
   border-radius: 5px;
   /*box-shadow: 0 4px 15px 0 #000;*/
+}
+.portfolio-img + .tooltip > .tooltip-inner {
+    padding: 15px;
+    /*font-size: 1em;*/
+    text-align: center;
+    font-size: 20px;
+  }
+.tooltip > img {
+  text-align: left;
 }
 #modal-row2 {
   padding-top: 3%;
@@ -194,20 +206,23 @@ a:hover .gh-modal {
 }
 .pic-header h2 {
   color: #fff;
-  margin-top: -16%;
-  margin-left: 13%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-top: -17%;
+  margin-left: 8%;
+  border: 2px solid rgba(46, 178, 255, 0.4);
   position: inherit;
   /*background-color: rgba(255, 255, 255, 0.4);*/
   background-color: rgba(0, 0, 0, 0.5);
   /*border-radius: 5px;*/
   border-radius: 4%;
-  width: 75%;
+  width: 85%;
 }
 .about-me-content {
   /*line-height: 1.4;*/
   padding: 6% 5% 0% 5%;
   text-align: left;
+}
+#about-me, #languages {
+  color: #2eb2ff;
 }
 .languages {
   text-align: center;
@@ -218,7 +233,7 @@ a:hover .gh-modal {
 }
 #jump {
   /*border-radius: 30px;*/
-  padding-top: 20px;
+  padding-top: 55px;
   padding-bottom: 20px;
   width: 100%;
   /*border: 3px solid #fff;*/
@@ -365,6 +380,17 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 15%;
   }
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+  }
+  .about-me-content {
+    /*line-height: 1.4;*/
+    padding: 13% 5% 7% 5%;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width : 1375px) {
@@ -393,6 +419,15 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 15%;
   }
+  .pic-header h2 {
+    margin-top: -15%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+  }
+  .about-me-content {
+    padding: 11% 5% 7% 5%;
+  }
 }
 
 @media only screen and (max-width : 1300px) {
@@ -420,6 +455,9 @@ a:hover .fa2 {
   }
   #scroll-arrow {
     margin-top: 20%;
+  }
+  .about-me-content {
+    padding: 9.5% 5% 7% 5%;
   }
 }
 /*****************************
@@ -452,6 +490,15 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 20%;
   }
+  .pic-header h2 {
+    margin-top: -16%;
+  }
+  .about-me-content {
+    padding: 9% 5% 5% 5%;
+  }
+  #jump {
+    padding-top: 70px;
+  }
 }
 
 @media only screen and (max-width : 1177px) {
@@ -479,6 +526,9 @@ a:hover .fa2 {
   }
   #scroll-arrow {
     margin-top: 20%;
+  }
+  #jump {
+    padding-top: 80px;
   }
 }
 
@@ -508,6 +558,9 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 20%;
   }
+  .pic-header h2 {
+    margin-top: -16.5%;
+  }
 }
 
 @media only screen and (max-width : 1077px) {
@@ -536,6 +589,12 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 30%;
   }
+  .pic-header h2 {
+    margin-top: -17%;
+  }
+  #jump {
+    padding-top: 85px;
+  }
 }
 
 @media only screen and (max-width : 1041px) {
@@ -563,6 +622,14 @@ a:hover .fa2 {
   }
   #scroll-arrow {
     margin-top: 30%;
+  }
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  #jump {
+    padding-top: 65px;
   }
 }
 /*****************************
@@ -601,21 +668,25 @@ a:hover .fa2 {
     padding-top: 15%;
   }
   .about-me-content {
-    padding-top: 10%;
+    padding: 10% 5% 5% 5%;
+    text-align: center;
   }
   #jump {
-    padding-top: 50%;
+    padding-top: 10%;
   }
   .pic-header h2 {
-    margin-top: -5%;
-    margin-left: 0%;
-    font-size: 2.8em;
+    margin-top: -14%;
+    margin-left: 20%;
+    font-size: 3.5em;
     border-radius: 4%;
-    width: 100%;
+    width: 65%;
   }
   #port-title {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  #projects {
+    font-size: 2.96em;
   }
   .portfolio-item-modal {
     padding-bottom: 50px;
@@ -679,21 +750,21 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 85%;
   }
-  .languages {
-    padding-top: 0%;
-  }
   .about-me-content {
-    padding-top: 10%;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
   }
   #jump {
-    padding-top: 50%;
+    padding-top: 10%;
   }
   .pic-header h2 {
-    margin-top: -5%;
+    margin-top: -1%;
     margin-left: 0%;
-    font-size: 2.7em;
-    border-radius: 4%;
+    font-size: 3em;
     width: 100%;
+  }
+  #languages {
+    padding-bottom: 5%;
   }
   h4 {
     font-size: .97em;
@@ -701,11 +772,15 @@ a:hover .fa2 {
     margin-bottom: 1px;
   }
   #port-title {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2.5em;
+    text-align: center;
   }
   .portfolio-item-modal {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   #contact-title {
     padding-top: 10%;
@@ -763,21 +838,20 @@ a:hover .fa2 {
   #scroll-arrow {
     margin-top: 80%;
   }
-  .languages {
-    padding-top: 0%;
-  }
   .about-me-content {
-    padding-top: 10%;
+    padding: 5% 5% 0% 5%;
   }
   #jump {
-    padding-top: 50%;
+    padding-top: 10%;
   }
   .pic-header h2 {
-    margin-top: -5%;
+    margin-top: -1%;
     margin-left: 0%;
-    font-size: 2.7em;
-    border-radius: 4%;
+    font-size: 2.8em;
     width: 100%;
+  }
+  #languages {
+    padding-bottom: 5%;
   }
   h4 {
     font-size: .97em;
@@ -785,11 +859,15 @@ a:hover .fa2 {
     margin-bottom: 1px;
   }
   #port-title {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2.5em;
+    text-align: center;
   }
   .portfolio-item-modal {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   #contact-title {
     padding-top: 10%;
@@ -840,5 +918,32 @@ a:hover .fa2 {
   }
   #scroll-arrow {
     margin-top: 80%;
+  }
+  #port-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2em;
+    text-align: center;
+  }
+  .portfolio-item-modal {
+    padding-bottom: 10px;
+  }
+  .about-me-content {
+    padding: 3% 0% 0% 0%;
+  }
+  #jump {
+    padding-top: 10%;
+  }
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 0%;
+    font-size: 2.4em;
+    width: 100%;
+  }
+  #languages {
+    padding-bottom: 3%;
+    font-size: 2.4em;
   }
 }
