@@ -1,213 +1,187 @@
-@font-face {
-    font-family: 'Kollektif-Bold';
-    src: url('.fonts/Kollektif-Bold.ttf');
-}
-
-html {
-    overflow: hidden;
-    height: 100%;
-}
-
-body {
+/* Make the body 100% of the browser viewport height */
+html, body {
   height: 100%;
-  overflow: auto;
-  background-color: #fff;
-  font-family: 'Lato', sans-serif;
+  margin: 0;
   font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
-
-.home {
-  padding-top: 0px;
-  padding-bottom: 90px;
-}
-
-.about, .contact {
-  text-align: center;
-  background-color: #2eb2ff;
-}
-
-.about {
-  padding: 15px 300px 10px 300px;
-}
-
-.portfolio {
-  text-align: center;
-  padding: 50px 50px 150px 50px;
-}
-
-.contact {
-  padding: 50px 100px;
-}
-
-h1, h3, h6, p {
-  color: #2eb2ff;
-}
-
-h2, h4, .fontawesomeicon {
-  color: #000;
-}
-
 h1 {
-  font-size: 19.85em;
+  /*padding: 20% 0 0 0;*/
+  margin: 0;
+  text-align: left;
+  font-size: 17.85em;
+  opacity: (white, 0.5);
+  /*color: #2eb2ff;*/
   font-weight: 900;
 }
-
+p {
+  text-align: center;
+  opacity: (white, 0.5);
+  /*color: #fff;*/
+}
 h2 {
+  /*text-align: center;*/
+  opacity: (black, 0.5);
   font-size: 3.5em;
+  /*padding: 20% 0 0 0;*/
+  margin: 0;
   font-weight: 700;
 }
-
 h3 {
+  text-align: center;
+  opacity: (black, 0.5);
   font-size: 5em;
   font-weight: 700;
 }
-
 h4 {
   line-height: 1.4;
+  font-size: 1.34em;
 }
+h5 {
 
+}
 h6 {
   font-size: 1.14em;
 }
-
+h1, h3, h6, p, h5 {
+  color: #2eb2ff;
+}
+h2, h4, .fontawesomeicon {
+  color: #000;
+}
 span, a:hover .fa {
   color: #fff;
 }
-
-.top {
-  margin-top: 160px;
-}
-
-.fontawesomeicon {
-  text-decoration: none;
-  padding: 10px;
-}
-
-footer {
+/* Make each section 100% of the browser viewport height */
+section {
+  height: 100%;
+  /*color: white;*/
+  position: relative;
   text-align: center;
-  background-color: #000;
-  padding: 50px;
 }
-
-#copyright {
-  font-size: 1.29em;
+/* Center the content of the sections */
+section .inner {
+  margin: 0 auto;
+  max-width: 85%;
 }
-
+section .inner-contact {
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* Background colors for each section */
+section#one { background-color: #fff; }
+section#two {
+  /*background-color: #2eb2ff;*/
+  background-image: url("img/66%-5G.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+section#three { background-color: #fff; }
+section#four { background-color:  #2eb2ff; }
+/*****************************
+        HOME SECTION
+******************************/
+.header {
+  padding: 5% 0 0 0;
+}
+.top {
+  /*margin-top: 160px;*/
+  margin: 37% 0 0 0;
+}
+#top, #bottom {
+  text-align: left;
+  margin-left: 20%;
+}
+#www-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: -90px;
+  margin-left: 705px;
+}
+@keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes scroll-arrow {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+#scroll-arrow {
+  -webkit-animation: scroll-arrow 4s infinite;
+  -moz-animation: scroll-arrow 4s infinite;
+  -o-animation: scroll-arrow 4s infinite;
+  animation: scroll-arrow 4s infinite;
+  margin-top: 11%;
+}
+/*****************************
+      PORTFOLIO SECTION
+******************************/
 #port-title {
+  padding-top: 5%;
   padding-bottom: 70px;
 }
-
-#portfolio-img {
+.portfolio-img {
   border: 3px solid #2eb2ff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px 0 #000;
+  border-radius: 5px;
+  /*box-shadow: 0 4px 15px 0 #000;*/
 }
-
-#modal-content {
-  text-align: center;
+.portfolio-img + .tooltip > .tooltip-inner {
+    padding: 15px;
+    /*font-size: 1em;*/
+    text-align: center;
+    font-size: 20px;
+  }
+.tooltip > img {
+  text-align: left;
 }
-
-#modal-content {
+#modal-row2 {
+  padding-top: 3%;
+}
+.modal-info {
   color: #000;
   font-size: 1.14em;
   font-weight: bold;
+  text-align: center;
 }
-
-#group-members {
+/*#modal-content {
+  color: #000;
+  font-size: 1.14em;
+  font-weight: bold;
+  text-align: center;
+}*/
+.group-members {
   color: #2eb2ff;
 }
-
-#modal-img {
+.modal-img {
   border: 3px solid #2eb2ff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-
+.modal-desc {
+  padding-top: 2%;
+}
 .fontawesomeiconmodal {
   color: #000;
   text-decoration: none;
   padding: 10px;
+  padding-bottom: 2%;
 }
-
 a:hover .gh-modal {
   color: #2eb2ff;
 }
-
-#www-logo {
-  height: 50px;
-  width: 50px;
-  margin-top: -105px;
-  margin-left: 770px;
-}
-
-#resume-btn {
-  margin: 20px auto;
-}
-
-#btn-resume {
-  border: 2px solid #fff;
-  background-color: #000;
-  color: #2eb2ff;
-  font-weight: bold;
-}
-
-#btn-resume:hover {
-  border: 2px solid #000;
-  background-color: #fff;
-  color: #2eb2ff;
-  font-weight: bold;
-}
-
-#resume-content {
-  background-color: #2eb2ff;
-}
-
-/*.shape {
-  height: 150px;
-  width: 150px;
-  background-color: #0074d9;
-  border-radius: 80px;
-  margin-bottom: 30px;
-  float: left;
-  margin-right: 20px;
-}
-
-.shape2 {
-  border-radius: 30px;
-  transform: rotate(45deg);
-  margin-left: -200px;
-}*/
-
-#jump {
-  border-radius: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  /*border: 3px solid #fff;*/
-}
-
-.fa-times {
-  color: #2eb2ff;
-}
-
-#skills {
-  font-size: 1.14em;
-}
-
-.languages {
-  text-align: center;
-  padding-top: 4%;
-}
-
-#skill-header {
-  line-height: 1;
-  padding-top: 10px;
-}
-
-#modal-row2 {
-  padding-top: 3%;
-}
-
-#btn-modal {
+.btn-modal {
   border: 2px solid #2eb2ff;
   background-color: #000;
   color: #2eb2ff;
@@ -216,851 +190,881 @@ a:hover .gh-modal {
   margin-right: 2%;
   /*margin-bottom: 10%;*/
 }
-#btn-modal:hover {
+.btn-modal:hover {
   border: 2px solid #000;
   background-color: #fff;
   color: #2eb2ff;
   font-weight: bold;
 }
+.fa-times {
+  color: #2eb2ff;
+}
+/*****************************
+      ABOUT ME SECTION
+******************************/
+.about {
+  text-align: center;
+}
+.pic-header, .about-me-content {
+  padding: 3% 0 0 0;
+}
+.pic-header h2 {
+  color: #fff;
+  margin-top: -17%;
+  margin-left: 8%;
+  border: 2px solid rgba(46, 178, 255, 0.4);
+  position: inherit;
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  /*border-radius: 5px;*/
+  border-radius: 4%;
+  width: 85%;
+}
+.about-me-content {
+  /*line-height: 1.4;*/
+  padding: 6% 5% 0% 5%;
+  text-align: left;
+}
+#about-me, #languages {
+  color: #2eb2ff;
+}
+.languages {
+  text-align: center;
+  padding-top: 4%;
+}
+.skill-header {
+  font-weight: bold;
+}
+#jump {
+  /*border-radius: 30px;*/
+  padding-top: 55px;
+  padding-bottom: 20px;
+  width: 100%;
+  /*border: 3px solid #fff;*/
+}
+/*****************************
+      CONTACT SECTION
+******************************/
+#contact-title {
+  color: #fff;
+  padding-top: 5%;
+}
+i.fa-switch {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+}
+i.fa-level-down {
+  color: #000;
+}
+.fontawesomeicon {
+  text-decoration: none;
+  padding: 10px;
+}
+#four {
+  margin: 0;
+}
+.contact {
+  padding: 10% 5% 3% 5%;
+}
+.contact, footer {
+  height: 50%;
+}
+#resume-btn {
+  margin: 20px auto;
+}
+#btn-resume {
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #2eb2ff;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+#btn-resume:hover {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #2eb2ff;
+  font-weight: bold;
+}
+#resume-content {
+  background-color: #2eb2ff;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  /*padding: 50px;*/
+  padding-top: 5%;
+}
+.copyright {
+  font-size: 1.29em;
+}
+/*****************************
+        Nav Bar Styles
+******************************/
+nav {
+  background-color: transparent;
+  border-color: transparent;
+}
+.fontawesomeicon2 {
+  text-decoration: none;
+  color: #000;
+}
+a:hover .fa2 {
+  color: grey;
+}
+#menu {
+  position: fixed;
+  right: 0;
+  /*left: 0;*/
+  /*top: 63%;*/
+  top: 80%;
+  width: 6em;
+  margin-top: -2.5em;
+  padding: 2%;
+  list-style: none;
+}
+/*****************************
+        Large Screens
+******************************/
 
-    /*****************************
-           Laptop devices
-    ******************************/
-
-@media only screen and (max-width : 1177px) {
+@media only screen and (max-width : 1850px) {
   h1 {
-    font-size: 17.85em;
+    font-size: 25.3em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
-    padding-top: 160px;
-    padding-bottom: 220px;
+  #chris {
+    padding-top: 1%;
   }
-
-  .top, .bottom {
-    font-size: 3.2em;
-    font-weight: 700;
-  }
-
   .top {
-    margin-top: 145px;
+    margin: 32% 0 0 0;
   }
-
-  .bottom {
-    margin: auto;
+  .top, .bottom {
+    font-size: 6em;
+    text-align: left;
+    margin-left: 20%;
   }
+  #www-logo {
+    height: 70px;
+    width: 70px;
+    margin-top: -8.3%;
+    margin-left: 64.5%;
+  }
+  #scroll-arrow {
+    margin-top: 5%;
+  }
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+    font-size: 4.5em;
+  }
+  .about-me-content {
+    padding: 16% 5% 7% 5%;
+    text-align: left;
+  }
+  #contact-title {
+    padding-top: 5%;
+    font-size: 4.5em;
+  }
+  .contact {
+    padding: 8% 5% 3% 5%;
+  }
+}
 
+@media only screen and (max-width : 1750px) {
+  h1 {
+    font-size: 23.46em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 1%;
+  }
+  .top {
+    margin: 35% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 5em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 60px;
+    width: 60px;
+    margin-top: -7.9%;
+    margin-left: 64.5%;
+  }
+  #scroll-arrow {
+    margin-top: 10%;
+  }
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+    font-size: 4.5em;
+  }
+  .about-me-content {
+    padding: 16% 5% 7% 5%;
+    text-align: left;
+  }
+  footer {
+    padding-top: 12%;
+  }
+}
+
+@media only screen and (max-width : 1625px) {
+  h1 {
+    font-size: 19.68em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 19%;
+  }
+  .top {
+    margin: 50% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
   #www-logo {
     height: 50px;
     width: 50px;
-    margin-top: -98px;
-    margin-left: 695px;
+    margin-top: -7.4%;
+    margin-left: 58%;
   }
-
-  .about {
-    padding: 0px 5px 15px;
+  #scroll-arrow {
+    margin-top: 10%;
   }
-
-  #about-me {
-    font-size: 2.57em;
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
   }
-
-  #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #languages {
-    font-size: 2.57em;
-  }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
-  }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
-  #port-title {
-    padding-bottom: 10px;
-  }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 3.15em;
-  }
-
-  #modal-content {
-    padding: 0px;
-  }
-
-  .contact {
-    padding: 30px 0px;
-  }
-
-  footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+  .about-me-content {
+    padding: 13% 5% 7% 5%;
+    text-align: left;
   }
 }
 
-@media only screen and (max-width : 1062px) {
+@media only screen and (max-width : 1500px) {
   h1 {
-    font-size: 15.85em;
+    font-size: 19.68em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
-    padding-top: 160px;
-    padding-bottom: 220px;
+  #chris {
+    padding-top: 19%;
   }
+  .top {
+    margin: 50% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -7.4%;
+    margin-left: 63%;
+  }
+  #scroll-arrow {
+    margin-top: 15%;
+  }
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+  }
+  .about-me-content {
+    padding: 13% 5% 7% 5%;
+    text-align: left;
+  }
+}
 
+@media only screen and (max-width : 1375px) {
+  h1 {
+    font-size: 18.68em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 22%;
+  }
+  .top {
+    margin: 55% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 4em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -8%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 15%;
+  }
+  .pic-header h2 {
+    margin-top: -15%;
+    margin-left: 8%;
+    border-radius: 4%;
+    width: 85%;
+  }
+  .about-me-content {
+    padding: 11% 5% 7% 5%;
+  }
+}
+
+@media only screen and (max-width : 1300px) {
+  h1 {
+    font-size: 16.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 35%;
+  }
+  .top {
+    margin: 65% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -8.1%;
+    margin-left: 61.5%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+  .about-me-content {
+    padding: 9.5% 5% 7% 5%;
+  }
+  footer {
+    padding-top: 12%;
+  }
+}
+/*****************************
+       Laptop devices
+******************************/
+
+@media only screen and (max-width : 1227px) {
+  h1 {
+    font-size: 16.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 45%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+  .pic-header h2 {
+    margin-top: -16%;
+  }
+  .about-me-content {
+    padding: 9% 5% 5% 5%;
+  }
+  #jump {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (max-width : 1177px) {
+  h1 {
+    font-size: 16.14em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 45%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+  #jump {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width : 1127px) {
+  h1 {
+    font-size: 15.35em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 20%;
+  }
+  .pic-header h2 {
+    margin-top: -16.5%;
+  }
+}
+
+@media only screen and (max-width : 1077px) {
+  h1 {
+    font-size: 14.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 77% 0 0 0;
+  }
+  .top, .bottom {
+    font-size: 3.3em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #www-logo {
+    height: 50px;
+    width: 50px;
+    margin-top: -9.4%;
+    margin-left: 65%;
+  }
+  #scroll-arrow {
+    margin-top: 30%;
+  }
+  .pic-header h2 {
+    margin-top: -17%;
+  }
+  #jump {
+    padding-top: 85px;
+  }
+  .contact {
+    padding: 10% 5% 8% 5%;
+  }
+  footer {
+    padding-top: 15%;
+  }
+}
+
+@media only screen and (max-width : 1041px) {
+  h1 {
+    font-size: 13.85em;
+    font-weight: 900;
+    text-align: left;
+  }
+  #chris {
+    padding-top: 50%;
+  }
+  .top {
+    margin: 75% 0 0 0;
+  }
   .top, .bottom {
     font-size: 3em;
-    font-weight: 700;
+    text-align: left;
+    margin-left: 20%;
   }
-
-  .top {
-    margin-top: 135px;
-  }
-
-  .bottom {
-    margin: auto;
-  }
-
   #www-logo {
-    height: 45px;
-    width: 45px;
-    margin-top: -88px;
-    margin-left: 615px;
+    height: 50px;
+    width: 50px;
+    margin-top: -9.5%;
+    margin-left: 62.5%;
   }
-
-  .about {
-    padding: 0px 5px 15px;
+  #scroll-arrow {
+    margin-top: 30%;
   }
-
-  #about-me {
-    font-size: 2.57em;
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 5%;
+    width: 90%;
   }
-
   #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #languages {
-    font-size: 2.57em;
-  }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
-  }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
-  #port-title {
-    padding-bottom: 10px;
-  }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 3.15em;
-  }
-
-  #modal-content {
-    padding: 0px;
-  }
-
-  .contact {
-    padding: 30px 0px;
-  }
-
-  footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+    padding-top: 65px;
   }
 }
-
-      /*****************************
-             Tablet devices
-      ******************************/
+/*****************************
+       Tablet devices
+******************************/
 
 @media only screen and (max-width : 991px) {
   h1 {
-    font-size: 11.85em;
+    font-size: 10.83em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
+  #chris {
     padding-top: 275px;
-    padding-bottom: 365px;
   }
-
   .top, .bottom {
     font-size: 2.5em;
     font-weight: 700;
   }
-
   .top {
-    margin-top: 90px;
+    margin-top: 340px;
   }
-
   .bottom {
-    margin: auto;
+    margin-left: 12%;
   }
-
   #www-logo {
-    height: 40px;
-    width: 40px;
-    margin-top: -75px;
-    margin-left: 455px;
+    height: 35px;
+    width: 35px;
+    margin-top: -60px;
+    margin-left: 420px;
   }
-
-  .about {
-    padding: 10px 150px 10px 150px;
+  #scroll-arrow {
+    margin-top: 60%;
   }
-
-  .portfolio {
-    padding: 0px 150px 0px 150px;
-  }
-
   #port-title {
-    padding-bottom: 30px;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
-
+  #projects {
+    font-size: 2.96em;
+  }
   .portfolio-item-modal {
     padding-bottom: 50px;
   }
-
-  .contact {
-    padding: 50px 0px;
+  .languages {
+    padding-top: 15%;
   }
-
-  #copyright {
-    font-size: 1.29em;
+  .about-me-content {
+    padding: 10% 5% 5% 5%;
+    text-align: center;
   }
-}
-
-      /*****************************
-              mobile devices
-      ******************************/
-
-@media only screen and (max-width : 767px) {
-  h1 {
-    font-size: 10.85em;
-    font-weight: 900;
-  }
-
-  #home {
-    padding-top: 160px;
-    padding-bottom: 220px;
-  }
-
-  .top, .bottom {
-    font-size: 2em;
-    font-weight: 700;
-  }
-
-  .top {
-    margin-top: 95px;
-  }
-
-  .bottom {
-    margin: auto;
-  }
-
-  #www-logo {
-    height: 25px;
-    width: 25px;
-    margin-top: -59px;
-    margin-left: 424px;
-  }
-
-  .about {
-    padding: 0px 5px 15px;
-  }
-
-  #about-me {
-    font-size: 2.57em;
-  }
-
   #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10%;
   }
-
-  #languages {
-    font-size: 2.57em;
+  .pic-header h2 {
+    margin-top: -14%;
+    margin-left: 20%;
+    font-size: 3.5em;
+    border-radius: 4%;
+    width: 65%;
   }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
+  #contact-title {
+    padding-top: 10%;
   }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
+  .copyright {
+    font-size: 1.55em;
   }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
-  #port-title {
-    padding-bottom: 10px;
-  }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 3.15em;
-  }
-
-  #modal-content {
-    padding: 0px;
-  }
-
   .contact {
-    padding: 30px 0px;
+    padding: 20% 5% 3% 5%;
   }
-
+  #btn-resume {
+    margin-top: 15%;
+  }
   footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+    padding-top: 18%;
   }
 }
-
-@media only screen and (max-width : 657px) {
-  h1 {
-    font-size: 4.85em;
-    font-weight: 900;
-  }
-
-  #home {
-    padding-top: 160px;
-    padding-bottom: 220px;
-  }
-
-  .top, .bottom {
-    font-size: 1.14em;
-    font-weight: 700;
-  }
-
-  .top {
-    margin-top: 40px;
-  }
-
-  .bottom {
-    margin: auto;
-  }
-
-  #www-logo {
-    height: 15px;
-    width: 15px;
-    margin-top: -35px;
-    margin-left: 188px;
-  }
-
-  .about {
-    padding: 0px 5px 15px;
-  }
-
-  #about-me {
-    font-size: 2.57em;
-  }
-
-  #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #languages {
-    font-size: 2.57em;
-  }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
-  }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
-  #port-title {
-    padding-bottom: 10px;
-  }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 3.15em;
-  }
-
-  #modal-content {
-    padding: 0px;
-  }
-
-  .contact {
-    padding: 30px 0px;
-  }
-
-  footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
-  }
-}
+/*****************************
+        mobile devices
+******************************/
 
 @media only screen and (max-width : 414px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  section {
+    height: 100%;
+  }
   h1 {
-    font-size: 6.64em;
+    font-size: 5.64em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
-    padding-top: 220px;
-    padding-bottom: 280px;
+  #chris {
+    padding-top: 255px;
   }
-
   .top, .bottom {
-    font-size: 1.78em;
+    font-size: 1.3em;
     font-weight: 700;
   }
-
   .top {
-    margin-top: 43px;
+    margin-top: 285px;
   }
-
   .bottom {
-    margin: auto;
+    margin-left: 15%;
   }
-
   #www-logo {
-    height: 25px;
-    width: 25px;
-    margin-top: -49px;
-    margin-left: 254px;
+    height: 20px;
+    width: 20px;
+    margin-top: -32px;
+    margin-left: 216px;
   }
-
-  .about {
-    padding: 0px 5px 15px;
+  #menu {
+    width: 4.3em;
   }
-
-  #about-me {
-    font-size: 2.57em;
+  #scroll-arrow {
+    margin-top: 85%;
   }
-
-  #jump {
-    border-radius: 30px;
-    padding-top: 10px;
+  #languages {
+    padding-bottom: 5%;
+  }
+  h4 {
+    font-size: .97em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  #port-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .portfolio-item-modal {
     padding-bottom: 10px;
   }
-
-  #languages {
-    font-size: 2.57em;
+  .about-me-content {
+    padding: 5% 5% 5% 5%;
+    text-align: center;
   }
-
-  #skill-header {
-    padding-top: 5px;
+  #jump {
+    padding-top: 10%;
+  }
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 0%;
+    font-size: 3em;
+    width: 100%;
+  }
+  #contact-title {
+    padding-top: 10%;
+    font-size: 2.75em;
+  }
+  .copyright {
     font-size: 1.5em;
   }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
-  #port-title {
-    padding-bottom: 10px;
-  }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 3.15em;
-  }
-
-  #modal-content {
-    padding: 0px;
-  }
-
   .contact {
-    padding: 30px 0px;
+    padding: 27% 5% 13% 5%;
   }
-
+  #btn-resume {
+    margin-top: 15%;
+  }
   footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+    margin-top: 20%;
+    padding-top: 30%;
   }
 }
 
 @media only screen and (max-width : 375px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  section {
+    height: 100%;
+  }
   h1 {
-    font-size: 5.85em;
+    font-size: 5.05em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
-    padding-top: 200px;
-    padding-bottom: 250px;
+  #chris {
+    padding-top: 255px;
   }
-
   .top, .bottom {
-    font-size: 1.48em;
+    font-size: 1.3em;
     font-weight: 700;
   }
-
   .top {
-    margin-top: 43px;
+    margin-top: 283px;
   }
-
   .bottom {
-    margin: auto;
+    margin-left: 14%;
   }
-
   #www-logo {
-    height: 18px;
-    width: 18px;
-    margin-top: -40px;
-    margin-left: 226px;
+    height: 20px;
+    width: 20px;
+    margin-top: -30px;
+    margin-left: 193px;
   }
-
-  .about {
-    padding: 0px 5px 15px;
+  #menu {
+    width: 4.3em;
   }
-
-  #about-me {
-    font-size: 2.57em;
+  #scroll-arrow {
+    margin-top: 80%;
   }
-
-  #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  h4 {
+    font-size: .97em;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
-
-  #languages {
-    font-size: 2.57em;
-  }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
-  }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
   #port-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .portfolio-item-modal {
     padding-bottom: 10px;
   }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
+  .about-me-content {
+    padding: 5% 5% 0% 5%;
   }
-
-  h3 {
-    font-size: 3.15em;
+  #jump {
+    padding-top: 10%;
   }
-
-  #modal-content {
-    padding: 0px;
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 0%;
+    font-size: 2.8em;
+    width: 100%;
   }
-
+  #languages {
+    padding-bottom: 5%;
+  }
+  #contact-title {
+    font-size: 2.55em;
+    padding-top: 16%;
+  }
+  .copyright {
+    font-size: 1.4em;
+  }
   .contact {
-    padding: 30px 0px;
+    padding: 27% 5% 13% 5%;
   }
-
+  #btn-resume {
+    margin-top: 15%;
+  }
   footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+    margin-top: 20%;
+    padding-top: 25%;
   }
 }
 
 @media only screen and (max-width : 321px) {
   h1 {
-    font-size: 4.85em;
+    font-size: 4.25em;
     font-weight: 900;
+    text-align: left;
   }
-
-  #home {
-    padding-top: 160px;
-    padding-bottom: 220px;
+  #chris {
+    padding-top: 500%;
   }
-
   .top, .bottom {
-    font-size: 1.14em;
+    font-size: 1em;
     font-weight: 700;
   }
-
   .top {
-    margin-top: 40px;
+    /*margin-top: 283px;*/
+    margin-top: 238%;
   }
-
   .bottom {
-    margin: auto;
+    margin-left: 14%;
   }
-
   #www-logo {
-    height: 15px;
-    width: 15px;
-    margin-top: -35px;
-    margin-left: 188px;
+    height: 13px;
+    width: 13px;
+    margin-top: -9%;
+    margin-left: 67%;
   }
-
-  .about {
-    padding: 0px 5px 15px;
+  #menu {
+    width: 4.3em;
   }
-
-  #about-me {
-    font-size: 2.57em;
+  #scroll-arrow {
+    margin-top: 80%;
   }
-
-  #jump {
-    border-radius: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #languages {
-    font-size: 2.57em;
-  }
-
-  #skill-header {
-    padding-top: 5px;
-    font-size: 1.5em;
-  }
-  /*#skills.data {
-    padding-bottom: 10px;
-  }*/
-
-  .portfolio {
-    padding: 0px 5px;
-  }
-
-  #projects {
-    font-size: 2.57em;
-  }
-
   #port-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #projects {
+    font-size: 2em;
+    text-align: center;
+  }
+  .portfolio-item-modal {
     padding-bottom: 10px;
   }
-
-  .portfolio-item-modal {
-    padding-bottom: 30px;
+  .about-me-content {
+    padding: 3% 0% 0% 0%;
   }
-
-  h3 {
-    font-size: 3.15em;
+  #jump {
+    padding-top: 10%;
   }
-
-  #modal-content {
-    padding: 0px;
+  .pic-header h2 {
+    margin-top: -1%;
+    margin-left: 0%;
+    font-size: 2.4em;
+    width: 100%;
   }
-
-  .contact {
-    padding: 30px 0px;
+  #languages {
+    padding-bottom: 3%;
+    font-size: 2.4em;
   }
-
+  #contact-title {
+    font-size: 2.18em;
+    padding-top: 15%;
+  }
+  .copyright {
+    font-size: 1.1em;
+  }
   footer {
-    padding: 30px 0;
-  }
-
-  #copyright {
-    font-size: 1.29em;
+    padding-top: 25%;
   }
 }
-
-
-      /*****************************
-                Laptops
-      ******************************/
-
-/*@media only screen and (min-width : 992px) {
-
-}*/
-
-      /*****************************
-              Large Screens
-      ******************************/
-
-/*@media only screen and (min-width : 993px) {
-
-}*/
-
-      /*****************************
-              Nav Bar Styles
-      ******************************/
-
-/*nav {
-  font-family: 'Lato', sans-serif;
-}
-
-.navbar-default {
-  background-color: #2eb2ff;
-  border-color: #269ee4;
-}
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #000000;
-}
-.navbar-default .navbar-text {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #000000;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #2eb2ff;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #000000;
-  background-color: #269ee4;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-  background-color: #269ee4;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #000000;
-  background-color: #269ee4;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #000000;*/
-  /*background-color: #269ee4;*/
-  /*background-color: #2eb2ff;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #000000;
-  background-color: #269ee4;
-}
-.navbar-default .navbar-toggle {
-  border-color: #269ee4;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #269ee4;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-link {
-  color: #ffffff;
-}
-.navbar-default .navbar-link:hover {
-  color: #000000;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #000000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #000000;
-    background-color: #269ee4;
-  }
-}*/

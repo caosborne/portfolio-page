@@ -1,0 +1,3 @@
+RewriteCond %{HTTP_HOST} ^50.87.248.152
+RewriteCond %{HTTP_HOST} ^www.chrisosbor.ne [nc]
+RewriteRule (.*) http://chrisosbor.ne$1 [R=301,L]
