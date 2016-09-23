@@ -108,7 +108,7 @@ $(document).ready(function(){
     }
   });
 
+});
+
   // $(window).on('resize',function(){location.reload();});
   $(window).resize(function(){location.reload();});
-
-});

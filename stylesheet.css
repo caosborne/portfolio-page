@@ -532,10 +532,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 35%;
+    padding-top: 5%;
   }
   .top {
-    margin: 65% 0 0 0;
+    margin: 40% 0 0 0;
   }
   .top, .bottom {
     font-size: 3.3em;
@@ -549,13 +549,27 @@ a:hover .fa2 {
     margin-left: 61.5%;
   }
   #scroll-arrow {
-    margin-top: 20%;
+    margin-top: 8%;
+  }
+  #jump {
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .pic-header h2 {
+    margin-top: -16%;
+    margin-left: 2.5%;
+    width: 90%;
+    font-size: 3.5em;
   }
   .about-me-content {
-    padding: 9.5% 5% 7% 5%;
+    padding: 3% 5% 2% 5%;
   }
+  .languages {
+    padding-top: 1%;
+}
   footer {
-    padding-top: 12%;
+    padding-top: 5%;
   }
 }
 /*****************************
@@ -569,10 +583,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 45%;
+    padding-top: 5%;
   }
   .top {
-    margin: 77% 0 0 0;
+    margin: 40% 0 0 0;
   }
   .top, .bottom {
     font-size: 3.3em;
@@ -586,16 +600,24 @@ a:hover .fa2 {
     margin-left: 65%;
   }
   #scroll-arrow {
-    margin-top: 20%;
+    margin-top: 8%;
+  }
+  #jump {
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
   }
   .pic-header h2 {
     margin-top: -16%;
+    margin-left: 5.5%;
+    width: 90%;
+    font-size: 3.5em;
   }
   .about-me-content {
-    padding: 9% 5% 5% 5%;
+    padding: 3% 5% 2% 5%;
   }
-  #jump {
-    padding-top: 70px;
+  .languages {
+    padding-top: 1%;
   }
 }
 
@@ -606,10 +628,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 45%;
+    padding-top: 5%;
   }
   .top {
-    margin: 77% 0 0 0;
+    margin: 40% 0 0 0;
   }
   .top, .bottom {
     font-size: 3.3em;
@@ -623,10 +645,24 @@ a:hover .fa2 {
     margin-left: 65%;
   }
   #scroll-arrow {
-    margin-top: 20%;
+    margin-top: 8%;
   }
   #jump {
-    padding-top: 80px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .pic-header h2 {
+    margin-top: -16%;
+    margin-left: 5.5%;
+    width: 90%;
+    font-size: 3.5em;
+  }
+  .about-me-content {
+    padding: 3% 5% 2% 5%;
+  }
+  .languages {
+    padding-top: 1%;
   }
 }
 
@@ -637,10 +673,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 50%;
+    padding-top: 5%;
   }
   .top {
-    margin: 77% 0 0 0;
+    margin: 40% 0 0 0;
   }
   .top, .bottom {
     font-size: 3.3em;
@@ -654,10 +690,24 @@ a:hover .fa2 {
     margin-left: 65%;
   }
   #scroll-arrow {
-    margin-top: 20%;
+    margin-top: 15%;
+  }
+  #jump {
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
   }
   .pic-header h2 {
     margin-top: -16.5%;
+    margin-left: 5.5%;
+    width: 90%;
+    font-size: 3.5em;
+  }
+  .about-me-content {
+    padding: 1% 5% 2% 5%;
+  }
+  .languages {
+    padding-top: 1%;
   }
 }
 
@@ -668,10 +718,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 50%;
+    padding-top: 5%;
   }
   .top {
-    margin: 77% 0 0 0;
+    margin: 40% 0 0 0;
   }
   .top, .bottom {
     font-size: 3.3em;
@@ -685,19 +735,33 @@ a:hover .fa2 {
     margin-left: 65%;
   }
   #scroll-arrow {
-    margin-top: 30%;
-  }
-  .pic-header h2 {
-    margin-top: -17%;
+    margin-top: 15%;
   }
   #jump {
-    padding-top: 85px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .pic-header h2 {
+    margin-top: -16.5%;
+    margin-left: 5.5%;
+    width: 90%;
+    font-size: 3.5em;
+  }
+  .about-me-content {
+    padding: 1% 5% 2% 5%;
+  }
+  .languages {
+    padding-top: 1%;
   }
   .contact {
     padding: 10% 5% 8% 5%;
   }
+  #btn-resume {
+    margin-bottom: 5%;
+  }
   footer {
-    padding-top: 15%;
+    padding-top: 5%;
   }
 }
 
@@ -708,10 +772,10 @@ a:hover .fa2 {
     text-align: left;
   }
   #chris {
-    padding-top: 50%;
+    padding-top: 25%;
   }
   .top {
-    margin: 75% 0 0 0;
+    margin: 55% 0 0 0;
   }
   .top, .bottom {
     font-size: 3em;
@@ -725,15 +789,33 @@ a:hover .fa2 {
     margin-left: 62.5%;
   }
   #scroll-arrow {
-    margin-top: 30%;
-  }
-  .pic-header h2 {
-    margin-top: -1%;
-    margin-left: 5%;
-    width: 90%;
+    margin-top: 15%;
   }
   #jump {
-    padding-top: 65px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .pic-header h2 {
+    margin-top: -16.5%;
+    margin-left: 5.5%;
+    width: 90%;
+    font-size: 3.5em;
+  }
+  .about-me-content {
+    padding: 1% 5% 2% 5%;
+  }
+  .languages {
+    padding-top: 1%;
+  }
+  .contact {
+    padding: 10% 5% 8% 5%;
+  }
+  #btn-resume {
+    margin-bottom: 5%;
+  }
+  footer {
+    padding-top: 7%;
   }
 }
 /*****************************
