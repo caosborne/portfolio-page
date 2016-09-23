@@ -1,41 +1,3 @@
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-
-  $('.collapse').collapse()
-
-  $(function () {
-     $('#modal').modal('toggle');
-  });
-
-  // fix hide submenu (in chrome 43)
-  Ext.override(Ext.menu.Menu, {
-    onMouseLeave: function(e) {
-    var me = this;
-
-    // BEGIN FIX
-    var visibleSubmenu = false;
-    me.items.each(function(item) {
-        if(item.menu && item.menu.isVisible()) {
-            visibleSubmenu = true;
-        }
-    })
-    if(visibleSubmenu) {
-        return;
-    }
-    // END FIX
-
-    me.deactivateActiveItem();
-
-    if (me.disabled) {
-        return;
-    }
-
-    me.fireEvent('mouseleave', me, e);
-    }
-  });
-
-});
-
 (function($) {
 
     // Init ScrollMagic
@@ -109,5 +71,44 @@ $(document).ready(function(){
 
 })(jQuery);
 
-// $(window).on('resize',function(){location.reload();});
-$(window).resize(function(){location.reload();});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('.collapse').collapse()
+
+  $(function () {
+     $('#modal').modal('toggle');
+  });
+
+  // fix hide submenu (in chrome 43)
+  Ext.override(Ext.menu.Menu, {
+    onMouseLeave: function(e) {
+    var me = this;
+
+    // BEGIN FIX
+    var visibleSubmenu = false;
+    me.items.each(function(item) {
+        if(item.menu && item.menu.isVisible()) {
+            visibleSubmenu = true;
+        }
+    })
+    if(visibleSubmenu) {
+        return;
+    }
+    // END FIX
+
+    me.deactivateActiveItem();
+
+    if (me.disabled) {
+        return;
+    }
+
+    me.fireEvent('mouseleave', me, e);
+    }
+  });
+
+  // $(window).on('resize',function(){location.reload();});
+  $(window).resize(function(){location.reload();});
+
+});
